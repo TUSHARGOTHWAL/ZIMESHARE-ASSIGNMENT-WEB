@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimeshare</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+    <script type="module" src="./scripts/firebase-config.js" defer></script>
+    <script type="module" src="./scripts/cart.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <h1 class="text-2xl font-bold text-gray-800">Zimeshare</h1>
+            </a>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Home</a>
+                <a href="cart.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Cart</a>
+                <a href="checkout.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Checkout</a>
+                <a href="add-product.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Add Product</a>
+                <a href="login.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Login</a>
+                <a href="signup.html" class="text-gray-600 hover:text-gray-900 transition duration-300 text-lg">Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold mb-6">Your Cart</h2>
+        <div id="cart-items" class="bg-white shadow-lg rounded-lg p-6"></div>
+        <a href="checkout.html" class="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">Proceed to Checkout</a>
+    </section>
+    <main class="container mx-auto px-4 py-12">
+        <div id="cart-items"></div>
+        <div id="cart-subtotal" class="mt-4 text-xl font-bold">Subtotal: ₹0</div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">© TUSHAR GOTHWAL.  Zimeshare All rights reserved.</p>
+            <div>
+                <a href="privacy.html" class="text-gray-400 hover:text-gray-300 ml-4">Privacy Policy</a>
+                <a href="terms.html" class="text-gray-400 hover:text-gray-300 ml-4">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
