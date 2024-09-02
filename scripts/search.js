@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const fuse = new Fuse(products, {
             keys: ['name', 'description'],
             includeScore: true,
-            threshold: 0.4,  
+            threshold: 0.5,  
         });
 
         function displayResults(items) {
